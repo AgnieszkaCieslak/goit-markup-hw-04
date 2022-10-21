@@ -26,13 +26,14 @@ h5,
 h6,
 p,
 ul {
+  /* all:unset; */
   margin: 0;
   padding: 0;
   font-size: 100%;
   list-style-type: none;
 }
 
-/* MENU */
+/* LOGO */
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -59,20 +60,23 @@ ul {
 .logo-white {
   color: var(--color-white);
 }
+/* NAV */
+.nav-margin {
+  margin-left: 93px;
+  width: 254px;
+}
 .list-nav-index,
 .list-adr-index {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  padding: 0;
 }
-.list-nav-index {
-  padding-left: 93px;
-  width: 347px;
-}
-.list-adr-index {
+
+.menu-margin {
   padding-right: 21px;
-  padding-left: 371px;
-  width: 295px;
+  margin-left: 345px;
+  width: 342px;
 }
 .links-menu {
   font-weight: 500;
@@ -81,6 +85,19 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.mail-menu {
+  width: 161px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tel-menu {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .dark {
   color: inherit;
 }
@@ -89,6 +106,7 @@ ul {
 }
 .dark-grey {
   color: var(--color-dark-grey);
+  fill: var(--color-dark-grey);
 }
 .white {
   color: var(--color-white);
@@ -103,16 +121,22 @@ ul {
 .dark-grey:focus,
 .light-grey:focus {
   color: var(--color-blue);
+  fill: var(--color-blue);
 }
 
-/* HEADER */
+/* HEADER & BUTTON*/
 
 .header-index {
   padding-block: 200px;
-  background-color: var(--background-color-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/photo-background.jpg) no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .header-text-index {
-  margin-inline: auto;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -123,11 +147,11 @@ ul {
   text-align: center;
 }
 .button-index {
+  box-sizing: content-box;
   margin-top: 30px;
-  margin-inline: auto;
   padding-block: 10px;
   padding-inline: 41px;
-  display: flex;
+  width: 118px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -136,8 +160,8 @@ ul {
   color: var(--color-white);
   background: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
   border-radius: 4px;
-  border-color: var(--color-blue);
 }
 
 /* CONTAINER & SECTIONs */
@@ -147,19 +171,22 @@ ul {
   margin: auto;
   /* background-color: rgb(240, 241, 178); */
 }
-
 .section {
   padding-block: 94px;
   /* background-color: rgb(231, 137, 29); */
 }
-
 .section-buttons {
   padding: 6px 22px;
   /* background-color: rgb(245, 121, 162); */
 }
 
-/* LOREM IPSUM */
+/* OUR STRENGTHS  */
 
+.icon-box {
+  background-color: var(--background-color-light-grey);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
 .list-lorem-index {
   display: flex;
   justify-content: space-around;
@@ -167,15 +194,23 @@ ul {
   letter-spacing: 0.03em;
 }
 .box-lorem-index {
-  padding-inline: 15px;
+  margin-inline: 15px;
 }
 .lorem-text-index {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.box-lorem-index-left {
+  margin-right: 15px;
+  padding-left: 15px;
+}
+.box-lorem-index-right {
+  margin-left: 15px;
+  padding-right: 15px;
+}
 .description-lorem-index {
-  padding-top: 10px;
+  margin-top: 10px;
   line-height: 1.71;
   color: var(--color-dark-grey);
 }
@@ -190,7 +225,8 @@ ul {
   text-align: center;
 }
 .image-list-index {
-  padding-top: 50px;
+  margin-top: 50px;
+  padding-bottom: 94px;
   padding-inline: 15px;
   display: flex;
   justify-content: space-between;
@@ -209,7 +245,8 @@ ul {
   line-height: 1.16;
 }
 .list-team-index {
-  padding: 50px 215px 0;
+  padding-inline: 215px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -218,20 +255,98 @@ ul {
 .image-team-index {
   margin: 0 0 0 0;
   background-color: var(--background-color-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 0px 0px 4px 4px;
 }
+.description-margin {
+  margin-top: 30px;
+}
 .our-team-description {
-  padding-top: 30px;
   font-weight: 500;
 }
 .our-team-text {
-  padding-top: 10px;
+  margin-top: 10px;
   padding-bottom: 30px;
   color: var(--color-dark-grey);
 }
+.icons-list {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 32px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+/* !!!!!!!  IKONY    OUR TEAM  !!!!!! */
 
+.icon-instagram-grey,
+.icon-tweeter-grey,
+.icon-facebook-grey,
+.icon-linked-grey {
+  fill: #afb1b8;
+}
+/* hover */
+.icon-instagram-grey:hover,
+.icon-instagram-grey:focus,
+.icon-tweeter-grey:hover,
+.icon-tweeter-grey:focus,
+.icon-facebook-grey:hover,
+.icon-facebook-grey:focus,
+.icon-linked-grey:hover,
+.icon-linked-grey:focus {
+  fill: var(--color-blue);
+}
+
+/* OUR CLIENTS */
+.our-clients {
+  padding-inline: 15px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.list-icons-footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+}
+.icon-border {
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+/* !!!!!!!  IKONY  OUR CLIENTS  !!!!!! */
+
+.icon-ya-co-grey,
+.icon-tagline-grey,
+.icon-company-grey,
+.icon-foster-blue,
+.icon-brand-grey,
+.icon-tag-line-grey {
+  fill: #afb1b8;
+}
+
+.icon-ya-co-grey:hover,
+.icon-ya-co-grey:focus,
+.icon-tagline-grey:hover,
+.icon-tagline-grey:focus,
+.icon-company-grey:hover,
+.icon-company-grey:focus,
+.icon-foster-blue:hover,
+.icon-foster-blue:focus,
+.icon-brand-grey:hover,
+.icon-brand-grey:focus,
+.icon-tag-line-grey:hover,
+.icon-tag-line-grey:focus {
+  fill: var(--color-blue);
+}
 /* FOOTER */
 
 .footer-index,
@@ -241,9 +356,12 @@ ul {
   font-style: inherit;
   background-color: var(--background-color-dark-blue);
 }
+.footer-wraper {
+  display: flex;
+}
 .logo-footer {
-  padding-bottom: 20px;
   font-family: "Raleway";
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -251,23 +369,58 @@ ul {
   color: var(--color-blue);
   text-decoration: none;
 }
+.list-footer {
+  margin-top: 20px;
+}
 .adress-footer,
 .links-footer {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.adress-footer {
-  padding-top: 20px;
+.footer-margin {
+  margin-top: 9px;
 }
-.links-footer {
-  padding-top: 9px;
+.second-footer {
+  margin-left: 70px;
 }
+.join-us {
+  margin-bottom: 20px;
+  padding-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 /* PORTFOLIO BUTTONS */
+.buttons-margin {
+  margin-bottom: 50px;
+}
+/* !!!!!!!  IKONY  JOIN US  !!!!!! */
+.icon-instagram-black,
+.icon-tweeter-black,
+.icon-facebook-black,
+.icon-linked-black {
+  fill: rgba(255, 255, 255, 0.1);
+}
+.icon-instagram-black:hover,
+.icon-instagram-black:focus,
+.icon-tweeter-black:hover,
+.icon-tweeter-black:focus,
+.icon-facebook-black:hover,
+.icon-facebook-black:focus,
+.icon-linked-black:hover,
+.icon-linked-black:focus {
+  fill: var(--color-blue);
+}
+/* PORTFOLIO */
 
 .list-button-portfolio {
-  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -302,10 +455,17 @@ ul {
 }
 .picture-portfolio {
   margin: 0 0 0 0;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.picture-portfolio:hover,
+.picture-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.picture-margin {
+  margin-top: 20px;
 }
 .picture-header-portfolio {
-  padding-top: 20px;
   padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
@@ -313,7 +473,7 @@ ul {
   letter-spacing: 0.06em;
 }
 .picture-description-portfolio {
-  padding-top: 4px;
+  margin-top: 4px;
   padding-bottom: 20px;
   padding-left: 24px;
   font-size: 16px;

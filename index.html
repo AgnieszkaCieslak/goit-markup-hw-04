@@ -19,12 +19,14 @@
     <title>Studio</title>
   </head>
   <body>
-    <header>
-      <section class="menu-index container header">
+    <header class="header">
+      <!----------------- NAV ----------------->
+      <section class="menu-index container">
         <a class="logo" href="index.html"
           >Web<span class="logo-black">Studio</span></a
         >
-        <nav>
+        <!-- !!!!!!!!!!!!!!!   A   P   K   !!!!!!!!!!!! -->
+        <nav class="nav-margin">
           <ul class="list-nav-index">
             <li><a class="links-menu blue" href="#">Agencja</a></li>
             <li>
@@ -33,30 +35,51 @@
             <li><a class="links-menu dark" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="list-adr-index">
-          <li>
-            <a class="links-menu dark-grey" href="mailto:info@devstudio.com"
+        <!-- !!!!!!!!!!!!!!!!!    M    T    !!!!!!!!!!!!!! -->
+        <div class="menu-margin">
+          <ul class="list-adr-index">
+            <li>
+              <a class="links-menu dark-grey mail-menu" href="mailto:info@devstudio.com"
+                ><svg width="16">
+                <use              
+                  href="images/icons.svg#icon-envelope-dark-grey"
+                ></use></svg
               >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="links-menu dark-grey" href="tel:+48111111111"
+              >
+            </li>
+            <li>
+              <a class="links-menu dark-grey tel-menu" href="tel:+48111111111"
+                ><svg width="10">
+                <use
+                   href="images/icons.svg#icon-smartphone-dark-grey"
+                ></use></svg
               >+48 111 111 111</a
-            >
-          </li>
-        </ul>
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </header>
     <main>
+      <!----------------- HEADER & BUTTON ------->
       <section class="header-index">
         <h1 class="header-text-index">
           EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
         </h1>
         <button class="button-index pointer" type="button">Zamów usługe</button>
       </section>
-      <section>
-        <ul class="list-lorem-index container section">
-          <li class="box-lorem-index">
+      <!-------------------OUR STRENGTHS --------------->
+      <section class="container section">
+        <ul class="list-lorem-index">
+          <li class="box-lorem-index-left">
+            <div class="icon-box">
+              <svg width="70" height="70">
+                <use
+                  class="icon-antena"
+                  href="images/icons.svg#icon-antena"
+                ></use>
+              </svg>
+            </div>
             <h3 class="lorem-text-index">LOREM IPSUM</h3>
             <p class="description-lorem-index">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -64,6 +87,14 @@
             </p>
           </li>
           <li class="box-lorem-index">
+            <div class="icon-box">
+              <svg width="70" height="70">
+                <use
+                  class="icon-clock"
+                  href="images/icons.svg#icon-clock"
+                ></use>
+              </svg>
+            </div>
             <h3 class="lorem-text-index">LOREM IPSUM</h3>
             <p class="description-lorem-index">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -71,13 +102,29 @@
             </p>
           </li>
           <li class="box-lorem-index">
+            <div class="icon-box">
+              <svg width="70" height="70">
+                <use
+                  class="icon-diagram"
+                  href="images/icons.svg#icon-diagram"
+                ></use>
+              </svg>
+            </div>
             <h3 class="lorem-text-index">LOREM IPSUM</h3>
             <p class="description-lorem-index">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               velarcu sem. Sed non&nbsp;sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="box-lorem-index">
+          <li class="box-lorem-index-right">
+            <div class="icon-box">
+              <svg width="70" height="70">
+                <use
+                  class="icon-astronaut"
+                  href="images/icons.svg#icon-astronaut"
+                ></use>
+              </svg>
+            </div>
             <h3 class="lorem-text-index">LOREM IPSUM</h3>
             <p class="description-lorem-index">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -86,9 +133,10 @@
           </li>
         </ul>
       </section>
+      <!-----------------WHAT DO WE DO ------------------>
       <section class="container">
         <h2 class="header-what-do-we-do-index">Czym się zajmujemy</h2>
-        <ul class="image-list-index section">
+        <ul class="image-list-index">
           <li>
             <img
               src="images/coding-image.jpg"
@@ -104,6 +152,7 @@
           </li>
         </ul>
       </section>
+      <!-----------------OUR TEAM------------------>
       <section class="our-team-index section">
         <h2 class="header-our-team-index">Nasz zespół</h2>
         <ul class="list-team-index">
@@ -114,9 +163,36 @@
                 alt="produckt-designer"
                 width="270"
               />
-              <figcaption>
+              <figcaption class="description-margin">
                 <h4 class="our-team-description">John Doe</h4>
                 <p class="our-team-text">Produckt Designer</p>
+<ul class="icons-list">
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-instagram-grey pointer"
+                  href="images/icons.svg#icon-instagram-grey">
+                          </use>
+              </svg>
+                                 </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-tweeter-grey pointer"
+                  href="images/icons.svg#icon-tweeter-grey"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-facebook-grey pointer"
+                  href="images/icons.svg#icon-facebook-grey"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-linked-grey pointer"
+                  href="images/icons.svg#icon-linked-grey"></use>
+                    </svg>
+                  </li>
+                </ul>
               </figcaption>
             </figure>
           </li>
@@ -127,9 +203,38 @@
                 alt="frontend-developer"
                 width="270"
               />
-              <figcaption>
+              <figcaption class="description-margin">
                 <h4 class="our-team-description">John Doe</h4>
                 <p class="our-team-text">Frontend Developer</p>
+<ul class="icons-list">
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-instagram-grey pointer"
+                  href="images/icons.svg#icon-instagram-grey">
+                          </use>
+              </svg>
+                                 </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-tweeter-grey pointer"
+                  href="images/icons.svg#icon-tweeter-grey"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-facebook-grey pointer"
+                  href="images/icons.svg#icon-facebook-grey"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-linked-grey pointer"
+                  href="images/icons.svg#icon-linked-grey"></use>
+                    </svg>
+                  </li>
+                </ul>
+
+
               </figcaption>
             </figure>
           </li>
@@ -140,9 +245,37 @@
                 alt="marketing"
                 width="270"
               />
-              <figcaption>
+              <figcaption class="description-margin">
                 <h4 class="our-team-description">John Doe</h4>
                 <p class="our-team-text">Marketing</p>
+<ul class="icons-list">
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-instagram-grey pointer"
+                  href="images/icons.svg#icon-instagram-grey">
+                          </use>
+              </svg>
+                                 </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-tweeter-grey pointer"
+                  href="images/icons.svg#icon-tweeter-grey"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-facebook-grey pointer"
+                  href="images/icons.svg#icon-facebook-grey"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-linked-grey pointer"
+                  href="images/icons.svg#icon-linked-grey"></use>
+                    </svg>
+                  </li>
+                </ul>
+
               </figcaption>
             </figure>
           </li>
@@ -153,17 +286,80 @@
                 alt="ui-designer"
                 width="270"
               />
-              <figcaption>
+              <figcaption class="description-margin">
                 <h4 class="our-team-description">John Doe</h4>
                 <p class="our-team-text">UIDesigner</p>
+<ul class="icons-list">
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-instagram-grey pointer"
+                  href="images/icons.svg#icon-instagram-grey">
+                          </use>
+              </svg>
+                                 </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-tweeter-grey pointer"
+                  href="images/icons.svg#icon-tweeter-grey"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-facebook-grey pointer"
+                  href="images/icons.svg#icon-facebook-grey"></use>
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="44" height="44">
+                      <use class="icon-linked-grey pointer"
+                  href="images/icons.svg#icon-linked-grey"></use>
+                    </svg>
+                  </li>
+                </ul>
+
               </figcaption>
             </figure>
           </li>
         </ul>
       </section>
+<!-- -----------------OUR CLIENTS------------------ -->
+      <section class="our-clients container section"><h2>Nasi klienci</h2>
+    <ul class="list-icons-footer">
+      <li class="icon-border"><svg class="icon-ya-co-grey pointer" width="106" height="60"><use
+                  
+                  href="images/icons.svg#icon-ya-co-grey"
+                ></use></svg>
+              </li>
+      <li class="icon-border"><svg class="icon-tagline-grey pointer" width="106" height="60"><use
+                  
+                  href="images/icons.svg#icon-tagline-grey"
+                ></use></svg
+              ></li>
+<li class="icon-border"><svg class="icon-company-grey pointer" width="106" height="60"><use
+                  
+                  href="images/icons.svg#icon-company-grey"
+                ></use></svg
+              ></li>
+<li class="icon-border"><svg class="icon-foster-blue pointer" width="106" height="60"><use
+                  
+                  href="images/icons.svg#icon-foster-blue"
+                ></use></svg
+              ></li>
+<li class="icon-border"><svg class="icon-brand-grey pointer" width="106" height="60"><use
+                  
+                  href="images/icons.svg#icon-brand-grey"
+                ></use></svg
+              ></li>
+<li class="icon-border"><svg class="icon-tag-line-grey pointer" width="106" height="60"><use
+                  
+                  href="images/icons.svg#icon-tag-line-grey"
+                ></use></svg
+              ></li>
+    </ul></section>
     </main>
-    <footer>
-      <address class="footer-index">
+    <!-- -----------------FOOTER------------------ -->
+    <footer class="footer-index footer-wraper">
+      <address>
         <a class="logo-footer" href="index.html"
           >Web<span class="logo-white">Studio</span></a
         >
@@ -173,18 +369,42 @@
               m. Warszawa, Aleje Jerozolimskie 21
             </p>
           </li>
-          <li>
+          <li class="footer-margin">
             <a class="links-footer light-grey" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
-          <li>
+          <li class="footer-margin">
             <a class="links-footer light-grey" href="tel:+48111111111"
               >+48 111 111 111</a
             >
           </li>
         </ul>
       </address>
+<!-------------------------- JOIN US ---------------------->
+      <div class="second-footer">
+        <p class="join-us">DOŁĄCZ DO NAS</p>
+<svg class="icon-instagram-black pointer" width="44" height="44"><use
+                  
+                  href="images/icons.svg#icon-instagram-black"
+                ></use></svg
+              >
+<svg class="icon-tweeter-black pointer" width="44" height="44"><use
+                  
+                  href="images/icons.svg#icon-tweeter-black"
+                ></use></svg
+              >
+<svg class="icon-facebook-black pointer" width="44" height="44"><use
+                  
+                  href="images/icons.svg#icon-facebook-black"
+                ></use></svg
+              >
+<svg class="icon-linked-black pointer" width="44" height="44"><use
+                  
+                  href="images/icons.svg#icon-linked-black"
+                ></use></svg
+              >
+           </div>
     </footer>
   </body>
 </html>

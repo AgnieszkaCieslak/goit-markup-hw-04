@@ -20,11 +20,13 @@
   </head>
   <body>
     <header class="header">
+      <!-------------------WebStudio ------------------->
       <section class="menu-index container">
         <a class="logo" href="index.html"
           >Web<span class="logo-black">Studio</span></a
         >
-        <nav>
+        <!-----------------------  A   P   K  ----------------------->
+        <nav class="nav-margin">
           <ul class="list-nav-index">
             <li><a class="links-menu dark" href="index.html">Agencja</a></li>
             <li>
@@ -33,22 +35,34 @@
             <li><a class="links-menu dark" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="list-adr-index">
-          <li>
-            <a class="links-menu dark-grey" href="mailto:info@devstudio.com"
+        <!-----------------------    M    T  -------------------->
+        <div class="menu-margin">
+          <ul class="list-adr-index">
+            <li>
+              <a class="links-menu dark-grey mail-menu" href="mailto:info@devstudio.com"
+                ><svg width="16">
+                <use              
+                  href="images/icons.svg#icon-envelope-dark-grey"
+                ></use></svg
               >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="links-menu dark-grey" href="tel:+48111111111"
+              >
+            </li>
+            <li>
+              <a class="links-menu dark-grey tel-menu" href="tel:+48111111111"
+                ><svg width="10">
+                <use
+                   href="images/icons.svg#icon-smartphone-dark-grey"
+                ></use></svg
               >+48 111 111 111</a
-            >
-          </li>
-        </ul>
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </header>
-    <main class="section">
-      <section>
+    <main class="section container">
+      <!-------------------  BUTON`s ------------------->
+      <section class="buttons-margin">
         <ul class="list-button-portfolio">
           <li>
             <button
@@ -92,25 +106,28 @@
           </li>
         </ul>
       </section>
-      <section class="picture-box-portfolio container">
-        <figure class="picture-portfolio">
-          <img
+      <!------------------- ZDJĘCIA 9x9 ------------------->
+      <section class="picture-box-portfolio">
+        <!-- <a href="http:/google.com"> -->
+          <figure class="picture-portfolio">
+          <img 
             src="images/portfolio-technocrack.jpg"
             alt="website-on-a-laptop"
             width="370"
           />
-          <figcaption>
+          <figcaption class="picture-margin">
             <h4 class="picture-header-portfolio">Technocrack</h4>
             <p class="picture-description-portfolio">Strona internetowa</p>
           </figcaption>
         </figure>
+      <!-- </a> -->
         <figure class="picture-portfolio">
           <img
             src="images/portfolio-new-orlean.jpg"
             alt="two-man-playing-basketball"
             width="370"
           />
-          <figcaption>
+          <figcaption class="picture-margin">
             <h4 class="picture-header-portfolio">
               Grafika New Orlean vs Golden Star
             </h4>
@@ -124,7 +141,7 @@
             alt="logo-of-the-restaurant-Seafood"
             width="370"
           />
-          <figcaption>
+          <figcaption class="picture-margin">
             <h4 class="picture-header-portfolio">Restauracja Seafood</h4>
             <p class="picture-description-portfolio">Aplikacja</p>
           </figcaption>
@@ -132,7 +149,7 @@
 
         <figure class="picture-portfolio">
           <img src="images/portfolio-prime.jpg" alt="headphones" width="370" />
-          <figcaption>
+          <figcaption class="picture-margin">
             <h4 class="picture-header-portfolio">Projekt Prime</h4>
             <p class="picture-description-portfolio">Marketing</p>
           </figcaption>
@@ -144,7 +161,7 @@
             alt="two-cardboard-boxes"
             width="370"
           />
-          <figcaption>
+          <figcaption class="picture-margin">
             <h4 class="picture-header-portfolio">Projekt Boxes</h4>
             <p class="picture-description-portfolio">Aplikacja</p>
           </figcaption>
@@ -156,7 +173,7 @@
             alt="monitor"
             width="370"
           />
-          <figcaption>
+          <figcaption class="picture-margin">
             <h4 class="picture-header-portfolio">Inspiration has no Borders</h4>
             <p class="picture-description-portfolio">Strona internetowa</p>
           </figcaption>
@@ -168,7 +185,7 @@
             alt="colorful-magazine"
             width="370"
           />
-          <figcaption>
+          <figcaption class="picture-margin">
             <h4 class="picture-header-portfolio">Magazyn Limited Edition</h4>
             <p class="picture-description-portfolio">Dizajn</p>
           </figcaption>
@@ -176,7 +193,7 @@
 
         <figure class="picture-portfolio">
           <img src="images/portfolio-lab.jpg" alt="paper-tag" width="370" />
-          <figcaption>
+          <figcaption class="picture-margin">
             <h4 class="picture-header-portfolio">Projekt LAB</h4>
             <p class="picture-description-portfolio">Marketing</p>
           </figcaption>
@@ -188,16 +205,16 @@
             alt="typing-on-a-laptop"
             width="370"
           />
-          <figcaption>
+          <figcaption class="picture-margin">
             <h4 class="picture-header-portfolio">Growing Business</h4>
             <p class="picture-description-portfolio">Aplikacja</p>
           </figcaption>
         </figure>
       </section>
     </main>
-
-    <footer>
-      <address class="footer-portfolio">
+<!-------------------     FOOTER  ------------------->
+    <footer class="footer-portfolio footer-wraper">
+      <address >
         <a class="logo-footer blue-footer" href="index.html"
           >Web<span class="logo-white">Studio</span></a
         >
@@ -207,18 +224,43 @@
               m. Warszawa, Aleje Jerozolimskie 21
             </p>
           </li>
-          <li>
+
+          <li class="footer-margin">
             <a class="links-footer light-grey" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
-          <li>
+          <li class="footer-margin">
             <a class="links-footer light-grey" href="tel:+48111111111"
               >+48 111 111 111</a
             >
           </li>
         </ul>
       </address>
+      <!------------------- JOIN US ------------------->
+      <div class="second-footer">
+        <p class="join-us">DOŁĄCZ DO NAS</p>
+<svg class="icon-instagram-black pointer" width="44" height="44"><use
+                  
+                  href="images/icons.svg#icon-instagram-black"
+                ></use></svg
+              >
+<svg class="icon-tweeter-black pointer" width="44" height="44"><use
+                  
+                  href="images/icons.svg#icon-tweeter-black"
+                ></use></svg
+              >
+<svg class="icon-facebook-black pointer" width="44" height="44"><use
+                  
+                  href="images/icons.svg#icon-facebook-black"
+                ></use></svg
+              >
+<svg class="icon-linked-black pointer" width="44" height="44"><use
+                  
+                  href="images/icons.svg#icon-linked-black"
+                ></use></svg
+              >
+           </div>
     </footer>
   </body>
 </html>
