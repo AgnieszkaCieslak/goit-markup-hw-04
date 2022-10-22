@@ -174,15 +174,12 @@ ul {
 .container {
   width: 1200px;
   margin: auto;
-  /* background-color: rgb(240, 241, 178); */
 }
 .section {
   padding-block: 94px;
-  /* background-color: rgb(231, 137, 29); */
 }
 .section-buttons {
   padding: 6px 22px;
-  /* background-color: rgb(245, 121, 162); */
 }
 
 /* OUR STRENGTHS  */
