@@ -2,12 +2,17 @@
   --background-color-white: #ffffff;
   --background-color-dark-blue: #2f303a;
   --background-color-light-grey: #f5f4fa;
-  --color-white: #ffffff;
+  --background-color-blue: #2196f3;
+  --background-color-grey: #afb1b8;
+  --background-color-icon-black: rgba(255, 255, 255, 0.1);
+  --color-white: #fff;
+  --color-grey: #afb1b8;
   --color-dark: #212121;
   --color-black: #000000;
   --color-blue: #2196f3;
   --color-dark-grey: #757575;
   --color-light-grey: rgba(255, 255, 255, 0.6);
+  --color-border: #ececec;
 }
 body {
   margin: 0;
@@ -35,7 +40,7 @@ ul {
 
 /* LOGO */
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--color-border);
 }
 .menu-index {
   display: flex;
@@ -187,11 +192,16 @@ ul {
   padding: 25px 100px;
   margin-bottom: 30px;
 }
+
 .list-lorem-index {
   display: flex;
   justify-content: space-around;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+.icon-our-strengths {
+  width: 70px;
+  height: 70px;
 }
 .box-lorem-index {
   margin-inline: 15px;
@@ -255,8 +265,6 @@ ul {
 .image-team-index {
   margin: 0 0 0 0;
   background-color: var(--background-color-white);
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 0px 0px 4px 4px;
@@ -281,22 +289,24 @@ ul {
 }
 /* !!!!!!!  IKONY    OUR TEAM  !!!!!! */
 
-.icon-instagram-grey,
-.icon-tweeter-grey,
-.icon-facebook-grey,
-.icon-linked-grey {
-  fill: #afb1b8;
+.social-links {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-color-white);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: var(--background-color-grey);
 }
-/* hover */
-.icon-instagram-grey:hover,
-.icon-instagram-grey:focus,
-.icon-tweeter-grey:hover,
-.icon-tweeter-grey:focus,
-.icon-facebook-grey:hover,
-.icon-facebook-grey:focus,
-.icon-linked-grey:hover,
-.icon-linked-grey:focus {
-  fill: var(--color-blue);
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-links:hover,
+.social-links:focus {
+  background-color: var(--background-color-blue);
+  fill: var(--background-color-white);
 }
 
 /* OUR CLIENTS */
@@ -319,7 +329,7 @@ ul {
   width: 170px;
   height: 92px;
   box-sizing: border-box;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--color-grey);
   border-radius: 4px;
 }
 /* !!!!!!!  IKONY  OUR CLIENTS  !!!!!! */
@@ -330,7 +340,7 @@ ul {
 .icon-foster-blue,
 .icon-brand-grey,
 .icon-tag-line-grey {
-  fill: #afb1b8;
+  fill: var(--background-color-grey);
 }
 
 .icon-ya-co-grey:hover,
@@ -394,32 +404,34 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
+/* !!!!!!!  IKONY  JOIN US  !!!!!! */
+.social-list-black {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+}
+.social-links-black {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-color-icon-black);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  fill: var(--background-color-white);
+}
+.social-links-black:hover,
+.social-links-black:focus {
+  background-color: var(--background-color-blue);
+}
+/* PORTFOLIO */
 /* PORTFOLIO BUTTONS */
 .buttons-margin {
   margin-bottom: 50px;
 }
-/* !!!!!!!  IKONY  JOIN US  !!!!!! */
-.icon-instagram-black,
-.icon-tweeter-black,
-.icon-facebook-black,
-.icon-linked-black {
-  fill: rgba(255, 255, 255, 0.1);
-}
-.icon-instagram-black:hover,
-.icon-instagram-black:focus,
-.icon-tweeter-black:hover,
-.icon-tweeter-black:focus,
-.icon-facebook-black:hover,
-.icon-facebook-black:focus,
-.icon-linked-black:hover,
-.icon-linked-black:focus {
-  fill: var(--color-blue);
-}
-/* PORTFOLIO */
-
 .list-button-portfolio {
   display: flex;
   justify-content: center;
